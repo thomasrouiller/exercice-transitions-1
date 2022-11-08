@@ -1,0 +1,121 @@
+/* Base */
+
+:root {
+  --rich-black: #01161e;
+  --midnight-green: #124559;
+  --steel-teal: #598392;
+  --ash-grey: #aec3b0;
+  --beige: #eff6e0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding-bottom: 100px;
+  color: var(--rich-black);
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+video {
+  max-width: 100%;
+}
+
+/* Layout */
+
+.l-container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.l-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.l-row {
+  display: flex;
+}
+
+.l-col {
+  width: 50%;
+  border: solid 1px var(--steel-teal);
+  transition: box-shadow 0.4s;
+}
+
+.l-col:first-child {
+  padding: 30px;
+  border-right: 0;
+}
+
+/* Modules - video */
+
+.video-button {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.video-button:hover {
+  opacity: 0.6;
+}
+
+.video-button-pause {
+  display: none !important;
+}
+
+.video-container.is-playing .video-button-pause {
+  display: inline !important;
+}
+
+.video-container.is-playing .video-button-play {
+  display: none;
+}
+
+.video-wrapper {
+  transition: box-shadow 0.4s;
+}
+
+.video-container.is-active .video-wrapper,
+.video-container.is-playing .video-wrapper {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Modules - exercices */
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10px;
+
+  background: var(--steel-teal);
+}
+
+.box {
+  width: calc(100% / 3 - 20px);
+  padding: 30px 0;
+  background: var(--ash-grey);
+  color: var(--rich-black);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  cursor: default;
+}
