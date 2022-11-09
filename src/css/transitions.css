@@ -61,3 +61,16 @@
 #ex07 .box:nth-child(3) {
   transition-delay: 0.8s;
 }
+
+#ex08 .box {
+  transition: 1s;
+}
+
+#ex08 .wrapper:hover .box {
+  background-color: red;
+  color: blue;
+}
+
+#ex08 .wrapper:hover {
+  background-color: black;
+}
