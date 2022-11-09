@@ -1,0 +1,63 @@
+/* #ex05 .wrapper {
+}
+
+#ex05 .box {
+} */
+
+#ex01 .box:hover {
+  background-color: rgb(10, 75, 129);
+}
+
+#ex02 .box:hover {
+  background-color: rgb(10, 75, 129);
+  transition: 0.5s;
+}
+
+#ex03 .box:hover {
+  background-color: rgb(10, 75, 129);
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#ex04 .box:hover {
+  background-color: rgb(10, 75, 129);
+  color: rgb(232, 228, 208);
+  transition: 0.5s;
+}
+
+#ex05 .box {
+  transition: color 0.5s 0.5s, background-color 0.5s;
+}
+
+#ex05 .box:hover {
+  background-color: rgb(10, 75, 129);
+  color: rgb(232, 228, 208);
+}
+
+#ex06 .box {
+  transition: background-color 0.5s;
+}
+
+#ex06 .wrapper:hover .box {
+  background-color: red;
+}
+
+/* #ex07 .wrapper:nth-child(1) {
+  transition-delay: 0.5s;
+} */
+
+#ex07 .box {
+  transition: background-color 0.5s;
+}
+
+#ex07 .wrapper:hover .box {
+  background-color: red;
+}
+
+#ex07 .box:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+#ex07 .box:nth-child(3) {
+  transition-delay: 0.8s;
+}
